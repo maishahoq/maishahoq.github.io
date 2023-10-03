@@ -27,9 +27,5 @@ Throughout the development process, my primary goal was to create a user-friendl
 In the future, I plan to work on the search functionality of the websaite, continuously update and expand the recipe collection, and a smaller better description+visulalization when each video is clicked. I hope that the Cook It Off becomes a valuable resource for anyone looking to explore the world of cooking.
 
 ---
-
-**Class Repository for the Common Lab Class**
-Interactive Media Minor, [Communications Lab]
-
 **GitHub Repository:** [Link to GitHub Repository](https://github.com/maishahoq/CommLab)
 
