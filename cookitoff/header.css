@@ -1,0 +1,115 @@
+/* Apply general styles to header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(155, 28, 28); /* Adjust background color */
+    color: white;  /* Text color */
+    padding: 10px 20px; /* Add padding to header */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+/* Style the logo wrapper */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo {
+    width: 50px;
+    /* Set the logo width to make it square */
+    height: auto;
+    /* Let the height adjust proportionally */
+    margin-right: 10px;  /* will add spacing between logo and header name */
+}
+
+/* Style the header name */
+.header-name {
+    font-size: 24px;
+    /* Adjust font size */
+    font-weight: bold;
+}
+
+/* Style the search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 5px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #E64A19;
+}
+
+/* Common styles for navigation buttons and dropdown */
+nav button,
+nav a {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Style navigation buttons */
+nav button {
+    background: none;
+}
+
+/* Style the dropdown button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(155,28,28, 0.7);
+    /* Red with 70% opacity (adjust the alpha value as needed) */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 253, 253);
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover effect for buttons */
+nav a:hover {
+    background: #333;
+}
