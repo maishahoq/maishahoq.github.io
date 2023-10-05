@@ -1,0 +1,15 @@
+/* Center the SVG horizontally and vertically */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Set the SVG width to 60% of the viewport width and auto height */
+svg {
+    width: 60%;
+    height: auto;
+    max-width: 100%; /* Ensure it doesn't exceed the original width */
+}
