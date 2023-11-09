@@ -10,6 +10,9 @@
 //   }, 8000); // 8 seconds
 // }
 
+// // Import the page-flip library
+// import PageFlip from "page-flip";
+
 //we start with the page1.html file from here
 const scenes = [
   { img: "images/page1New.gif", audio: "audio/audio1.mp3" },
@@ -28,6 +31,7 @@ const scenes = [
 ];
 
 let currentScene = -1; // Start before the first scene, which is the video scene
+// let flipbook;
 
 // Get the elements
 const imageElement = document.getElementById("story-image");
