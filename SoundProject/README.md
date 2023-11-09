@@ -1,8 +1,12 @@
+# Project Name: Haunted House: Try to Escape
+
+## Haunted House: Try to Escape
+
+
 Link to the hosted Website: https://maishahoq.github.io/SoundProject/ 
 
 Team members: Maisha, Diana, Darko, Youssef
 
-Project Name: Haunted House: Try to Escape
 
 Project Description: The project is an audiobook about the scary story of the main protagonist, who is stuck at the Haunted House with the Witch. Despite his attempts to escape the house, the house becomes one huge end point for him. The theme of the project is centered around horror and suspense with a bit of a comical effect. It includes the classic elements of haunted house stories, creating an atmosphere of fear, mystery, and fantasy. The concept of the project is to create an interactive audiobook experience that immerses the audience in the scary story. By dividing the audio and visual images into scenes, we wanted to give the user the autonomy to navigate through the scenes by clicking on the “next” button, so the book pages flip to the next page. Every page of the book corresponds to each of the scenes with relevant audio-visual information.
 
