@@ -1,0 +1,24 @@
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#video {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Stretch gifs throughout the window screen */
+  object-fit: cover;
+}
+
+/* Style for the first screen */
+.landscape-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
