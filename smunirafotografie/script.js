@@ -6,3 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuLinks.classList.toggle("active");
   });
 });
+
+function navigateToPage(url) {
+  window.location.href = url;
+}

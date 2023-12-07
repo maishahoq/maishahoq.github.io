@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #dda15e; /* Beige background */
+    background-color: rgba(209, 121, 39); /* Beige background */
     font-family: 'Forum', serif;
 }
 
@@ -9,7 +9,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(221, 161, 94,0.894); /* Beige background */
+    background-color: rgba(209, 121, 39, 0.894); /* Beige background */
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -62,7 +62,7 @@ body, html {
         position: fixed; /* Changed from absolute to fixed */
         top: 60px; /* Adjust this value based on the height of your menu bar */
         width: 100%; /* Ensure it spans the full width */
-        background-color: rgb(221, 161, 94,0.894);
+        background-color: rgba(209, 121, 39, 0.894);
         box-sizing: border-box;
         padding: 20px; /* Add padding to ensure content isn't touching screen edges */
         text-align: center;
@@ -89,6 +89,8 @@ body, html {
 .social-media i:hover {
     color: green; /* Icon color on hover */
 }
+
+/*Home Page CSS*/
 .landing-page {
     background-image: url('LandingImg.png');
     background-size: cover;
@@ -100,4 +102,65 @@ body, html {
     align-items: center;
     color: white; /* or any color that contrasts with your image */
 }
-/* Add styles for your sections like #portfolio, #packages, etc. */
+
+/*Portfolio Page CSS*/
+
+.bodyWebPage{
+   margin-top: 30px;
+   color: white;
+
+}
+.portfolio {
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 50%; /* Adjust as needed */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Ensures the overlay stays within the container */
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0); /* Transparent overlay initially */
+    transition: background-color 0.5s ease;
+}
+
+.image-container:hover::before {
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay on hover */
+}
+
+
+.image-container img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.image-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for label */
+    padding: 5px;
+}
+
+
