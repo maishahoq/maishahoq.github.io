@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #dda15e; /* Beige background */
+    font-family: 'Forum', serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(221, 161, 94,0.894); /* Beige background */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.menu a:hover {
+    color: green;
+}
+
+.logo img {
+    width: 50px; /* Adjust as needed */
+}
+
+.social-media {
+    text-decoration: none;
+}
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        position: fixed; /* Changed from absolute to fixed */
+        top: 60px; /* Adjust this value based on the height of your menu bar */
+        width: 100%; /* Ensure it spans the full width */
+        background-color: rgb(221, 161, 94,0.894);
+        box-sizing: border-box;
+        padding: 20px; /* Add padding to ensure content isn't touching screen edges */
+        text-align: center;
+    }
+
+    .menu-links a {
+        display: block;
+        margin: 10px 0;
+        /* Ensure text fits comfortably within viewport */
+        font-size: 16px; /* Adjust font size for mobile view */
+    }
+}
+
+/* Add a class for when the menu is active */
+.menu-links.active {
+    display: block;
+}
+
+.social-media i {
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+}
+
+.social-media i:hover {
+    color: green; /* Icon color on hover */
+}
+.landing-page {
+    background-image: url('LandingImg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* or any color that contrasts with your image */
+}
+/* Add styles for your sections like #portfolio, #packages, etc. */
