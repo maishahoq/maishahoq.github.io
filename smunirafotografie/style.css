@@ -1,15 +1,16 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: rgba(209, 121, 39); /* Beige background */
+    background-color: rgb(237, 224, 212); /* Beige background */
     font-family: 'Forum', serif;
+    color:rgb(0, 0, 0);
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(209, 121, 39, 0.894); /* Beige background */
+    background-color: rgb(237, 224, 212, 0.5); /* Beige background */
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -19,17 +20,25 @@ body, html {
 }
 
 .menu a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 0 10px;
 }
 
 .menu a:hover {
-    color: green;
+    /*color: green;*/
+    color:rgb(183, 94, 10)
 }
 
+
 .logo img {
-    width: 50px; /* Adjust as needed */
+    width: 70px; 
+    height: auto; 
+    vertical-align: middle;
+    position: absolute;
+    left: 20px; /* adjust as needed */
+    top: 60%;
+    transform: translateY(-50%);
 }
 
 .social-media {
@@ -49,7 +58,7 @@ body, html {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 768px) {
@@ -62,7 +71,8 @@ body, html {
         position: fixed; /* Changed from absolute to fixed */
         top: 60px; /* Adjust this value based on the height of your menu bar */
         width: 100%; /* Ensure it spans the full width */
-        background-color: rgba(209, 121, 39, 0.894);
+        /*background-color: rgba(209, 121, 39, 0.894);*/
+        background-color:rgb(237, 224, 212,0.894);
         box-sizing: border-box;
         padding: 20px; /* Add padding to ensure content isn't touching screen edges */
         text-align: center;
@@ -82,12 +92,13 @@ body, html {
 }
 
 .social-media i {
-    color: white; /* Icon color */
+    color: rgb(0, 0, 0); /* Icon color */
     font-size: 20px; /* Icon size */
 }
 
 .social-media i:hover {
-    color: green; /* Icon color on hover */
+    /*color: green;  Icon color on hover */
+    color:rgb(183, 94, 10)
 }
 
 /*Home Page CSS*/
@@ -106,18 +117,25 @@ body, html {
 /*Portfolio Page CSS*/
 
 .bodyWebPage{
-   margin-top: 30px;
-   color: white;
+   margin-top: 10px;
+   color: rgb(1, 1, 1);
 
 }
 .portfolio {
     text-align: center;
-    padding: 20px;
+    padding: 70px;
 }
 
 .portfolio-heading {
     font-size: 2em;
     margin-bottom: 20px;
+    
+    
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container {
@@ -126,6 +144,7 @@ body, html {
     position: relative;
     cursor: pointer;
     overflow: hidden; /* Ensures the overlay stays within the container */
+    padding: 20px;
 }
 
 .image-container::before {
