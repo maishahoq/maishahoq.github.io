@@ -215,12 +215,24 @@ body, html {
     margin: 0 auto;
 }
 
+.contact-form form {
+    background-color: transparent; /* Same as page background */
+    border-bottom: 2px solid black; /* Black underline */
+}
+.contact-form label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
 .contact-form input, .contact-form textarea {
     width: 100%;
+    margin-bottom: 10px;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black; /* Black underline for input fields */
+    background-color: transparent; /* Same as page background */
 }
 
 .contact-form button {
@@ -235,8 +247,18 @@ body, html {
     display: block;
     margin-left: auto;
     margin-right: auto; /* Centering the button */
+
+    border-radius: 20px; /* Rounded shape */
+    width: 50%; /* Adjust as needed */
+    margin: 20px auto; /* Center button */
 }
 
 .contact-form button:hover {
     background-color: rgb(208, 116, 31); /* Slightly lighter color on hover */
+}
+
+/* Style for invalid input */
+.contact-form input:invalid, .contact-form select:invalid, .contact-form textarea:invalid {
+    background-color: rgba(255, 0, 0, 0.3); /* Red background */
+    border-color: rgb(214, 6, 6);
 }

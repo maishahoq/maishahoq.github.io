@@ -18,7 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("bookingForm")
     .addEventListener("submit", function (e) {
-      e.preventDefault();
+      // Check if the form is valid
+      if (!this.checkValidity()) {
+        e.preventDefault();
+        // Add any additional handling for invalid form
+      }
 
       const firstName = document.getElementById("firstName").value;
       const lastName = document.getElementById("lastName").value;
