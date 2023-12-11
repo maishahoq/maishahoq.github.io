@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if the form is valid
       if (!this.checkValidity()) {
         e.preventDefault();
-        // Add any additional handling for invalid form
       }
 
       const firstName = document.getElementById("firstName").value;
