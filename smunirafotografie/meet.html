@@ -14,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Large Screen Navigation Bar -->
@@ -37,13 +43,56 @@
           ><i class="fas fa-envelope"></i
         ></a>
       </div>
-
+      <!-- Small Screen Navigation Bar -->
       <div class="hamburger-menu">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
     </nav>
+
+    <!-- Form Body -->
+    <div class="contact-form">
+      <h2>Book a Session</h2>
+      <form id="bookingForm">
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Last Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <!-- Dropdown for Photography Type -->
+        <select id="photographyType" name="photographyType" required>
+          <option value="">Select Photography Type</option>
+          <option value="Event">Event</option>
+          <option value="Portrait">Portrait</option>
+          <option value="Lifestyle">Lifestyle</option>
+          <option value="Nature">Nature</option>
+        </select>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

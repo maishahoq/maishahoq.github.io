@@ -11,7 +11,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(237, 224, 212, 0.5); /* Beige background */
-    padding: 10px 20px;
+    padding: 20px 30px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,17 +27,18 @@ body, html {
 
 .menu a:hover {
     /*color: green;*/
-    color:rgb(183, 94, 10)
+    color:rgb(166, 83, 5)
 }
 
 
 .logo img {
-    width: 70px; 
+    /* This is perfect, don't change */
+    width: 100px;  
     height: auto; 
     vertical-align: middle;
     position: absolute;
     left: 20px; /* adjust as needed */
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -84,6 +85,17 @@ body, html {
         /* Ensure text fits comfortably within viewport */
         font-size: 16px; /* Adjust font size for mobile view */
     }
+
+    /* These two sections are for the Portrait Page image structure */
+    .row {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%; /* Full width for smaller screens */
+        padding: 10px 0; /* Adjust padding as needed */
+    }
+
 }
 
 /* Add a class for when the menu is active */
@@ -127,8 +139,10 @@ body, html {
 }
 
 .portfolio-heading {
+    font-weight: bold;
     font-size: 2em;
     margin-bottom: 20px;
+    padding: 20px;
     
     
 }
@@ -177,9 +191,52 @@ body, html {
     bottom: 10px;
     left: 10px;
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for label */
-    padding: 5px;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
+
+/* Let's Meet Page */
+.contact-form h2 {
+    font-family: 'Forum', serif;
+    font-weight: bold;
+    padding: 20px; 
+    text-align: center; 
+    font-size: 3em;
+}
+.contact-form {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; /* Rounded shape */
+    background-color: rgb(166, 83, 5); /* Specified color */
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centering the button */
+}
+
+.contact-form button:hover {
+    background-color: rgb(208, 116, 31); /* Slightly lighter color on hover */
+}
