@@ -257,8 +257,16 @@ body, html {
     background-color: rgb(208, 116, 31); /* Slightly lighter color on hover */
 }
 
-/* Style for invalid input */
-.contact-form input:invalid, .contact-form select:invalid, .contact-form textarea:invalid {
-    background-color: rgba(255, 0, 0, 0.3); /* Red background */
-    border-color: rgb(214, 6, 6);
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    /* ... existing styles ... */
+    background-color: rgb(237, 224, 212); /* Beige background */
+    /* ... other existing styles ... */
+}
+
+/* Reinforcing the background color for valid input */
+.contact-form input:valid, 
+.contact-form select:valid, 
+.contact-form textarea:valid {
+    background-color: rgb(237, 224, 212); /* Beige background */
 }
