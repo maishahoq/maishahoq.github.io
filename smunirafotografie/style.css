@@ -60,7 +60,7 @@ body, html {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(0, 0, 0);
+    background-color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -74,7 +74,7 @@ body, html {
         top: 60px; /* Adjust this value based on the height of your menu bar */
         width: 100%; /* Ensure it spans the full width */
         /*background-color: rgba(209, 121, 39, 0.894);*/
-        background-color:rgb(237, 224, 212,0.894);
+        background-color:#b7b7a4c0;
         box-sizing: border-box;
         padding: 20px; /* Add padding to ensure content isn't touching screen edges */
         text-align: center;
@@ -247,7 +247,7 @@ body, html {
     /* font-weight: bold; */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for label */
     padding: 7px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 
@@ -259,13 +259,15 @@ body, html {
     padding: 20px; 
     text-align: center; 
     font-size: 3em;
+    margin-top: 60px;
 }
 .contact-form {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     color: black;
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 80px; /* Centering the button */
 }
 
 .contact-form form {
@@ -304,7 +306,6 @@ body, html {
     display: block;
     margin-left: auto;
     margin-right: auto; /* Centering the button */
-
     border-radius: 20px; /* Rounded shape */
     width: 50%; /* Adjust as needed */
     margin: 20px auto; /* Center button */
@@ -363,7 +364,7 @@ body, html {
 .package ul {
     list-style-type: disc; /* This will add bullet points */
     padding: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     text-align: middle;   
     
 }
@@ -380,8 +381,9 @@ body, html {
 
 .additional-info {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     margin-top: 20px;
+    margin-bottom: 120px;
 }
 
 
@@ -403,7 +405,7 @@ body, html {
 .review {
     opacity: 0; /* Initially hidden */
     margin: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     transition: opacity 1s ease-out;
 }
 
@@ -427,3 +429,25 @@ body, html {
     to {transform: translateX(0); opacity: 1;}
 }
 
+
+/* Footer */
+footer {
+    background-color: #6b705c; /* Your specified color */
+    color: white; /* Adjust text color as needed */
+    text-align: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 0.8em; /* Adjust font size as needed */
+    position: fixed;
+    width:100%;
+    left: 0;
+    bottom: 0;
+}
+
+footer a {
+    color: white; /* Link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
