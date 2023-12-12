@@ -168,7 +168,7 @@ body, html {
 
 /*Home Page CSS*/
 .landing-page {
-    background-image: url('LandingImg.png');
+    background-image: url('landingImage.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
