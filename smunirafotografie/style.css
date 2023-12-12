@@ -114,11 +114,38 @@ body, html {
     .package ul {
         text-align: right;
         align-items: right;
+        padding-left: 5px; /* Reduced padding for <ul> */
+        padding-right: 5px; /* Add this if you need padding on the right as well */
     
     }
     /* Remove the border from the last package to avoid a line at the very bottom */
     .package:last-child {
         border-bottom: none;
+    }
+
+    /* Reviews Page */
+    .reviewMain {
+        margin-top: 30px;
+    }   
+    .reviews-header h1, .reviews-header h2, .reviews-header h3 {
+        font-size: 1.5em; /* Adjust font size for headings */
+        
+    }
+
+    .review {
+        margin: 15px 10px; /* Adjust margins for smaller screens */
+        font-size: 1em; /* Adjust font size for review text */
+        padding-top: 20px; /* Adjust this value based on the height of your menu bar */
+    }
+
+    /* Simplify animations on mobile or remove them if they feel too much */
+    .review.left, .review.right {
+        animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
 
 }
@@ -336,8 +363,7 @@ body, html {
     list-style-type: disc; /* This will add bullet points */
     padding: 15px;
     font-family: 'Roboto', sans-serif;
-    text-align: middle;
-    
+    text-align: middle;   
     
 }
 
@@ -355,5 +381,48 @@ body, html {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 20px;
+}
+
+
+
+/* Reviews Page */
+
+.reviewMain {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.review {
+    opacity: 0; /* Initially hidden */
+    margin: 40px;
+    font-family: 'Roboto', sans-serif;
+    transition: opacity 1s ease-out;
+}
+
+.review.left {
+    animation: slideFromLeft 1s forwards;
+    text-align: left;
+}
+
+.review.right {
+    animation: slideFromRight 1s forwards;
+    text-align: right;
+}
+
+@keyframes slideFromLeft {
+    from {transform: translateX(-50px); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+}
+
+@keyframes slideFromRight {
+    from {transform: translateX(50px); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
 }
 

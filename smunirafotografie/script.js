@@ -39,3 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
       window.URL.revokeObjectURL(anchor.href);
     });
 });
+
+//JS for the reviews page, sliding and scroll down apprearing animation
+document.addEventListener("DOMContentLoaded", () => {
+  const reviews = document.querySelectorAll(".review");
+
+  window.addEventListener("scroll", () => {
+    const windowHeight = window.innerHeight;
+    reviews.forEach((review) => {
+      const reviewTop = review.getBoundingClientRect().top;
+      if (reviewTop < windowHeight - 50) {
+        // 50 is a threshold
+        review.style.opacity = 1;
+      }
+    });
+  });
+});
