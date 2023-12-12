@@ -1,3 +1,5 @@
+//AOS.init(); //reference: https://michalsnik.github.io/aos/
+
 //JS for the mobile screen menu
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger-menu");
@@ -41,19 +43,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //JS for the reviews page, sliding and scroll down apprearing animation
-// document.addEventListener("DOMContentLoaded", () => {
-//   const reviews = document.querySelectorAll(".review");
+document.addEventListener("DOMContentLoaded", () => {
+  const reviews = document.querySelectorAll(".review");
 
-//   window.addEventListener("scroll", () => {
-//     const windowHeight = window.innerHeight;
-//     reviews.forEach((review) => {
-//       const reviewTop = review.getBoundingClientRect().top;
-//       if (reviewTop < windowHeight - 50) {
-//         // 50 is a threshold
-//         review.style.opacity = 1;
-//       }
-//     });
-//   });
-// });
+  window.addEventListener("scroll", () => {
+    const windowHeight = window.innerHeight;
+    reviews.forEach((review) => {
+      const reviewTop = review.getBoundingClientRect().top;
+      if (reviewTop < windowHeight - 50) {
+        // 50 is a threshold
+        review.style.opacity = 1;
+      }
+    });
+  });
+});
 
-AOS.init(); //reference: https://michalsnik.github.io/aos/
+//JS for experience section
+function zoomIn(element) {
+  element.style.transform = "scale(1.05)";
+}
+
+function zoomOut(element) {
+  element.style.transform = "scale(1)";
+}

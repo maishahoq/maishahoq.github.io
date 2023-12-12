@@ -170,7 +170,7 @@ body, html {
 
 /*Home Page CSS*/
 .landing-page {
-    background-image: url('IMG_7443.jpg');
+    background-image: url('LandingImg.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -333,59 +333,51 @@ body, html {
 
 
 
-/* Packages Webpage */
+/* Experiences Webpage */
 
-.packages {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px;
+.experience-container {
+    padding: 20px;
+    margin-top: 80px;
 }
-
-.package {
-    width: 20%; 
-    padding: 10px;
+.experience-title {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* This aligns the price at the bottom */
-    height: 100%; /* Ensure each package has the same height */
-}
-.package .content {
-    flex: 1; /* This makes the content grow to occupy available space */
-    display: flex;
-    flex-direction: column;
-}
-
-.package h2 {
+    justify-content: space-between;
     font-family: 'Forum', serif;
-    font-weight: bold;
     text-align: center;
-    font-size: 2.5em; 
+    font-weight: bold;
 }
 
-.package ul {
-    list-style-type: disc; /* This will add bullet points */
+.experience {
+    background: #f5f5f5; /* Light background for the container */
+    padding: 15px;
+    margin-bottom: 20px; /* Space between experiences */
+    transition: transform 0.3s ease;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Forum', serif;
+}
+
+.company-position {
+    text-align: left;
+}
+
+.date-range {
+    text-align: right;
+}
+
+.experience-details {
+    list-style-type: disc;
     padding: 15px;
     font-family: 'Roboto', sans-serif;
-    text-align: middle;   
-    
 }
 
-.package ul li {
-    margin-bottom: 10px; /* Adds space below each list item */
+/* Hover effects can be adjusted as needed */
+.experience:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
-.price {
-    font-size: 1.8em; 
-    font-family: 'Forum', serif;
-    text-align: center;
-    flex-direction: row;
-}
-
-.additional-info {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-}
-
 
 
 /* Reviews Page */
