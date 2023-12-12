@@ -96,6 +96,31 @@ body, html {
         padding: 10px 0; /* Adjust padding as needed */
     }
 
+
+    /* These  sections are for the Packages Page  structure in mobile phones*/
+    .packages {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .package {
+        width: 100%; /* Adjust for mobile */
+        margin-bottom: 20px; /* Space between packages */
+        border-bottom: 2px solid black; /* Black line separator */
+        padding-bottom: 20px; /* Padding above the separator line */
+    }
+    
+    .package ul {
+        text-align: right;
+        align-items: right;
+    
+    }
+    /* Remove the border from the last package to avoid a line at the very bottom */
+    .package:last-child {
+        border-bottom: none;
+    }
+
 }
 
 /* Add a class for when the menu is active */
@@ -219,6 +244,10 @@ body, html {
     background-color: transparent; /* Same as page background */
     border-bottom: 2px solid black; /* Black underline */
 }
+/* Remove the border from the last package to avoid a line at the very bottom */
+.contact-form form:last-child {
+        border-bottom: none;
+}
 .contact-form label {
     display: block;
     text-align: left;
@@ -270,3 +299,61 @@ body, html {
 .contact-form textarea:valid {
     background-color: rgb(237, 224, 212); /* Beige background */
 }
+
+
+
+
+/* Packages Webpage */
+
+.packages {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.package {
+    width: 20%; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This aligns the price at the bottom */
+    height: 100%; /* Ensure each package has the same height */
+}
+.package .content {
+    flex: 1; /* This makes the content grow to occupy available space */
+    display: flex;
+    flex-direction: column;
+}
+
+.package h2 {
+    font-family: 'Forum', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em; 
+}
+
+.package ul {
+    list-style-type: disc; /* This will add bullet points */
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: middle;
+    
+    
+}
+
+.package ul li {
+    margin-bottom: 10px; /* Adds space below each list item */
+}
+.price {
+    font-size: 1.8em; 
+    font-family: 'Forum', serif;
+    text-align: center;
+    flex-direction: row;
+}
+
+.additional-info {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
