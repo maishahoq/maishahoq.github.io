@@ -33,12 +33,12 @@ body, html {
 
 .logo img {
     /* This is perfect, don't change */
-    width: 100px;  
+    width: 80px;  
     height: auto; 
     vertical-align: middle;
     position: absolute;
     left: 20px; /* adjust as needed */
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
 }
 
@@ -85,7 +85,10 @@ body, html {
         /* Ensure text fits comfortably within viewport */
         font-size: 16px; /* Adjust font size for mobile view */
     }
-
+     
+    .landing-page {
+        text-align: center;
+    }
     /* These two sections are for the Portrait Page image structure */
     .row {
         flex-direction: column;
@@ -167,7 +170,7 @@ body, html {
 
 /*Home Page CSS*/
 .landing-page {
-    background-image: url('LandingImg.png');
+    background-image: url('IMG_7443.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -395,6 +398,7 @@ body, html {
 
 .reviews-header {
     text-align: center;
+    padding: 5px;
     margin-bottom: 50px;
     
 }

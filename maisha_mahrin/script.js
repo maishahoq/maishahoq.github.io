@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const lastName = document.getElementById("lastName").value;
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
-      const photographyType = document.getElementById("photographyType").value; // Get the selected photography type
+      const techworkType = document.getElementById("techworkType").value; // Get the selected swe type
 
-      const content = `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhotography Type: ${photographyType}\nMessage: ${message}`;
+      const content = `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nTech Work Type: ${techworkType}\nMessage: ${message}`;
       const blob = new Blob([content], { type: "text/plain" });
 
       const anchor = document.createElement("a");
@@ -41,17 +41,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //JS for the reviews page, sliding and scroll down apprearing animation
-document.addEventListener("DOMContentLoaded", () => {
-  const reviews = document.querySelectorAll(".review");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const reviews = document.querySelectorAll(".review");
 
-  window.addEventListener("scroll", () => {
-    const windowHeight = window.innerHeight;
-    reviews.forEach((review) => {
-      const reviewTop = review.getBoundingClientRect().top;
-      if (reviewTop < windowHeight - 50) {
-        // 50 is a threshold
-        review.style.opacity = 1;
-      }
-    });
-  });
-});
+//   window.addEventListener("scroll", () => {
+//     const windowHeight = window.innerHeight;
+//     reviews.forEach((review) => {
+//       const reviewTop = review.getBoundingClientRect().top;
+//       if (reviewTop < windowHeight - 50) {
+//         // 50 is a threshold
+//         review.style.opacity = 1;
+//       }
+//     });
+//   });
+// });
+
+AOS.init(); //reference: https://michalsnik.github.io/aos/
