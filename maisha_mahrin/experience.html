@@ -53,28 +53,166 @@
     </nav>
 
     <!-- Experiences section -->
+    <h1 class="experience-title">Work Experiences</h1>
     <div class="experience-container">
-      <h2 class="experience-title">Work Experiences</h2>
-      <div
-        class="experience"
-        onmouseover="zoomIn(this)"
-        onmouseout="zoomOut(this)"
-      >
+      <!-- Experience Card -->
+      <div class="experience-card" onclick="openExperience('experience1')">
         <div class="experience-header">
-          <span class="company-position"
+          <span class="experience-companyposition"
             >Qlub – Technical Product Manager Intern</span
           >
-          <span class="date-range">May 2023 - Present</span>
+          <span class="date-range">May 2023 - Aug 2023</span>
         </div>
-        <ul class="experience-details">
-          <!-- List of experience details -->
-          <li>Developed Postman API collection for POS endpoints...</li>
-          <!-- Additional list items -->
+        <p class="experience-skills">
+          Skills: Go, User Testing, product integration, Postman, SQL, data
+          analysis
+        </p>
+      </div>
+
+      <div class="experience-card" onclick="openExperience('experience2')">
+        <div class="experience-header">
+          <span class="experience-companyposition"
+            >NYU Tandon School of Engineering X US Defense – Technology
+            Consultant Intern</span
+          >
+          <span class="date-range">Jun 2022 - Aug 2022</span>
+        </div>
+        <p class="experience-skills">
+          Skills: JavaScript, SAP BI, Excel, Data Analysis
+          analysis
+        </p>
+      </div>
+
+
+      <div class="experience-card" onclick="openExperience('experience3')">
+        <div class="experience-header">
+          <span class="experience-companyposition"
+            >Convolute (Cybersecurity Software) - Technical Product Manager Intern</span
+          >
+          <span class="date-range">Dec 2021 - Dec 2022</span>
+        </div>
+        <p class="experience-skills">
+          Skills: Agile Software Development, Product Backlog, Marketing, Product Roadmap, Stakeholder and Client Management, Cross Team Collaboration
+        </p>
+      </div>
+
+      <!-- Full Experience Details (Hidden initially) -->
+      <div class="experience-details" id="experience1">
+        <span class="close-button" onclick="closeExperience('experience1')"
+          >&times;</span
+        >
+        <!-- Full details -->
+        <h3>Qlub – Technical Product Manager Intern</h3>
+        <span>May 2023 - Aug 2023</span>
+        <ul>
+          <li>
+            Developed the backend code in Go that provides analytical insights
+            into Qlub's integration effectiveness
+          </li>
+          <li>
+            Led the iOS integration, expanding user base, and managing risks and
+            aligning with solution architects and developers in global teams
+          </li>
+          <li>
+            Created comprehensive documentation for POS QSR discovery, reducing
+            onboarding time for POS partners by 30%
+          </li>
+          <li>
+            Developed Postman API for POS endpoints, streamlining Qlub-POS
+            communication & reducing order processing time by 20%
+          </li>
+          <li>
+            Assessed post-adoption market performance with SQL queries, raising
+            POS adoption by 15% across three Qlub systems
+          </li>
+          <li>
+            Collaborated with tech PMs from Singapore, Australia & Turkey to
+            optimize POS workflow, increasing user satisfaction by 15%
+          </li>
+          <li>
+            Effectively managed the product roadmap and backlog, ensuring
+            alignment with measurable customer and business KPIs
+          </li>
+        </ul>
+      </div>
+      
+
+      <div class="experience-details" id="experience2">
+        <span class="close-button" onclick="closeExperience('experience2')"
+          >&times;</span
+        >
+            <h3>NYU Tandon School of Engineering X US Defense – Technology
+            Consultant Intern</h3>
+        <span>Jun 2022 - Aug 2022</span>
+        <ul>
+      <li>
+            Used Web Content Accessibility Guidelines to prototype a JavaScript
+            web application responsive to disposable braille
+          </li>
+          <li>
+            Demonstrated expertise in handling sensitive data and navigate
+            complex regulations and compliance requirements and accessibility
+            guidelines to help clients achieve their goals and improve their
+            products and services
+          </li>
+          <li>
+            Conducted data collection and analysis using Excel and SAP BI to
+            evaluate the effectiveness of digital solutions aimed at enhancing
+            accessibility for visitors with disabilities at US Defense Museums
+            in New York and Vermont
+          </li>
+          <li>
+            Developed a technical report based on the data analysis to present
+            to the financial planning team of the client
+          </li>
+          <li>
+            Effectively collaborated with researchers at the lab and the client
+            to deliver customized solution with strict guidelines
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="experience-details" id="experience3">
+        <span class="close-button" onclick="closeExperience('experience3')"
+          >&times;</span
+        >
+        <!-- Full details -->
+        <h3>Convolute (Cybersecurity Software) - Technical Product Manager Intern</h3>
+        <span>Dec 2021 - Dec 2022</span>
+        <ul>
+          <li>
+            Led end-to-end development of a cybersecurity product for hospital data privacy, ensuring 100% regulatory compliance
+          </li>
+          <li>
+          Translated end-user and business needs into agile sprints, resulting in rapid releases
+          </li>
+          <li>
+            Crafted a high-impact marketing campaign driving a 20% surge in projected sales by communicating product's value proposition
+          </li>
+          <li>
+            Collaborated cross-functionally to maintain product backlogs, aligning features with roadmap through stakeholder & client input
+          </li>
+          <li>
+            Worked closely with CTO to identify and address issues, ensuring product met client expectations, leading to 95% client satisfaction
+          </li>
+          <li>
+            Ensured product adhered to data privacy regulations and industry standards, fostering customer trust and satisfaction
+          </li>
+          <li>
+            Communicated product vision and requirements, facilitating alignment across teams and driving collaborative efforts
+          </li>
         </ul>
       </div>
       <!-- Repeat for other experiences -->
     </div>
-
+    <div class="overlay" id="overlay" onclick="closeExperience()"></div>
     <script src="script.js"></script>
   </body>
+  <footer>
+    <p>All copyright content © 2023 Maisha Mahrin</p>
+    <p>
+      Website developed by <a href="mailto:mm10294@nyu.edu">Maisha Mahrin</a>
+    </p>
+  </footer>
 </html>

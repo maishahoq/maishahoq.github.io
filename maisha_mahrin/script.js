@@ -59,10 +59,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //JS for experience section
-function zoomIn(element) {
-  element.style.transform = "scale(1.05)";
+// function zoomIn(element) {
+//   element.style.transform = "scale(1.05)";
+// }
+
+// function zoomOut(element) {
+//   element.style.transform = "scale(1)";
+// }
+
+function openExperience(experienceId) {
+  document.getElementById(experienceId).classList.add("active");
+  // document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+  document.getElementById("overlay").style.display = "block"; // Show overlay
 }
 
-function zoomOut(element) {
-  element.style.transform = "scale(1)";
+function closeExperience(experienceId) {
+  document.getElementById(experienceId).classList.remove("active");
+  // document.body.style.backgroundColor = "";
+  document.getElementById("overlay").style.display = "none"; // Hide overlay
 }
+
+// Optional: Close experience details when clicking on the overlay
+document.getElementById("overlay").addEventListener("click", function () {
+  const openDetails = document.querySelector(".experience-details.active");
+  if (openDetails) {
+    openDetails.classList.remove("active");
+    this.style.display = "none"; // Hide overlay
+  }
+});

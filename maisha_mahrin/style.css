@@ -10,7 +10,8 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(237, 224, 212, 0.5); /* Beige background */
+    /* background-color: rgb(237, 224, 212, 0.5); Beige background */
+    background-color:#b7b7a4c0;
     padding: 20px 30px;
     position: fixed;
     width: 100%;
@@ -20,7 +21,7 @@ body, html {
 }
 
 .menu a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -33,12 +34,12 @@ body, html {
 
 .logo img {
     /* This is perfect, don't change */
-    width: 80px;  
+    width: 60px;  
     height: auto; 
     vertical-align: middle;
     position: absolute;
     left: 20px; /* adjust as needed */
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -59,7 +60,7 @@ body, html {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(0, 0, 0);
+    background-color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,7 +74,7 @@ body, html {
         top: 60px; /* Adjust this value based on the height of your menu bar */
         width: 100%; /* Ensure it spans the full width */
         /*background-color: rgba(209, 121, 39, 0.894);*/
-        background-color:rgb(237, 224, 212,0.894);
+        background-color:#b7b7a4c0;
         box-sizing: border-box;
         padding: 20px; /* Add padding to ensure content isn't touching screen edges */
         text-align: center;
@@ -97,33 +98,6 @@ body, html {
     .image-container {
         width: 100%; /* Full width for smaller screens */
         padding: 10px 0; /* Adjust padding as needed */
-    }
-
-
-    /* These  sections are for the Packages Page  structure in mobile phones*/
-    .packages {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .package {
-        width: 100%; /* Adjust for mobile */
-        margin-bottom: 20px; /* Space between packages */
-        border-bottom: 2px solid black; /* Black line separator */
-        padding-bottom: 20px; /* Padding above the separator line */
-    }
-    
-    .package ul {
-        text-align: right;
-        align-items: right;
-        padding-left: 5px; /* Reduced padding for <ul> */
-        padding-right: 5px; /* Add this if you need padding on the right as well */
-    
-    }
-    /* Remove the border from the last package to avoid a line at the very bottom */
-    .package:last-child {
-        border-bottom: none;
     }
 
     /* Reviews Page */
@@ -151,6 +125,14 @@ body, html {
         to {opacity: 1;}
     }
 
+    /* Experience section */
+    .experience-details {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        overflow-y: auto;
+        max-height: 90%;
+    }
 }
 
 /* Add a class for when the menu is active */
@@ -159,7 +141,7 @@ body, html {
 }
 
 .social-media i {
-    color: rgb(0, 0, 0); /* Icon color */
+    color: rgb(255, 255, 255); /* Icon color */
     font-size: 20px; /* Icon size */
 }
 
@@ -178,7 +160,13 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; /* or any color that contrasts with your image */
+    color: white;
+}
+
+.name{
+    font-size: 3em;
+    font-family: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*Portfolio Page CSS*/
@@ -268,6 +256,7 @@ body, html {
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 10%;
 }
 
 .contact-form form {
@@ -337,22 +326,47 @@ body, html {
 
 .experience-container {
     padding: 20px;
-    margin-top: 80px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
-.experience-title {
-    display: flex;
-    justify-content: space-between;
+
+.experience-title{
     font-family: 'Forum', serif;
     text-align: center;
     font-weight: bold;
+    margin-top:100px;
+}
+.experience-card {
+    background: rgb(237, 224, 212); /* Beige background */
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+   
+
 }
 
-.experience {
-    background: #f5f5f5; /* Light background for the container */
-    padding: 15px;
-    margin-bottom: 20px; /* Space between experiences */
-    transition: transform 0.3s ease;
+.experience-card:hover {
+    transform: scale(1.05);
 }
+
+.experience-details {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    background: rgb(237, 224, 212); /* Beige background */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    list-style-type: disc;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .experience-header {
     display: flex;
@@ -360,7 +374,7 @@ body, html {
     font-family: 'Forum', serif;
 }
 
-.company-position {
+.experience-companyposition {
     text-align: left;
 }
 
@@ -374,10 +388,30 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Hover effects can be adjusted as needed */
+/* Hover effects can be adjusted as needed
 .experience:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); /* Slight zoom on hover } */
+
+.experience-details.active {
+    display: block;
 }
+
+.close-button {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Ensure it's below the experience details but above everything else */
+}
+
 
 
 /* Reviews Page */
@@ -422,3 +456,26 @@ body, html {
     to {transform: translateX(0); opacity: 1;}
 }
 
+
+
+/* Footer */
+footer {
+    background-color: #6b705c; /* Your specified color */
+    color: white; /* Adjust text color as needed */
+    text-align: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 0.8em; /* Adjust font size as needed */
+    position: fixed;
+    width:100%;
+    left: 0;
+    bottom: 0;
+}
+
+footer a {
+    color: white; /* Link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
