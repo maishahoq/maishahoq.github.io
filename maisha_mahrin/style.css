@@ -179,6 +179,7 @@ body, html {
 .portfolio {
     text-align: center;
     padding: 70px;
+    margin-bottom: 5%;
 }
 
 .portfolio-heading {
@@ -196,7 +197,7 @@ body, html {
 }
 
 .image-container {
-    width: 50%; /* Adjust as needed */
+    width: 40%; /* Adjust as needed */
     display: inline-block;
     position: relative;
     cursor: pointer;
