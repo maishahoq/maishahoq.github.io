@@ -51,6 +51,165 @@
         <div class="bar"></div>
       </div>
     </nav>
+
+    <!-- Experiences section -->
+    <h1 class="experience-title">Education</h1>
+    <div class="experience-container">
+      <!-- Experience Card -->
+      <div class="experience-card" onclick="openExperience('experience1')">
+        <div class="experience-header">
+          <span class="experience-companyposition"
+            >New York University (NYU) - Abu Dhabi, UAE and New York, US</span
+          >
+          <span class="date-range">Expected Graduation: May 2024</span>
+        </div>
+        <p class="experience-skills">
+          Major: Computer Science
+        </p>
+      </div>
+
+      <div class="experience-card" onclick="openExperience('experience2')">
+        <div class="experience-header">
+          <span class="experience-companyposition"
+            >NYU Stern School of Business</span
+          >
+          <span class="date-range">Feb 2021 - May 2022</span>
+        </div>
+        <p class="experience-skills">
+          Minor: Business Studies
+        </p>
+      </div>
+
+
+      <div class="experience-card" onclick="openExperience('experience3')">
+        <div class="experience-header">
+          <span class="experience-companyposition"
+            >NYU Abu Dhabi</span
+          >
+          <span class="date-range">Feb 2023 - May 2024</span>
+        </div>
+        <p class="experience-skills">
+          Minor: Interactive Media
+        </p>
+      </div>
+
+      <!-- Full Experience Details (Hidden initially) -->
+      <div class="experience-details" id="experience1">
+        <span class="close-button" onclick="closeExperience('experience1')"
+          >&times;</span
+        >
+        <!-- Full details -->
+        <h3>New York University - Abu Dhabi, UAE and New York, US</h3>
+        <span>Expected Graduation: May 2024</span>
+        <div>Relevant Coursework: </div>
+        <ul>
+          <li>
+            Agile Software DevAlgorithms
+          </li>
+          <li>
+            Applied Machine Learning
+          </li>
+          <li>
+            Operating Systems
+          </li>
+          <li>
+            Comp Networks
+          </li>
+          <li>
+            Blockchain Technology Development
+          </li>
+          <li>
+            Statistics
+          </li>
+          <li>
+            Data Analysis
+          </li>
+          <li>
+            Operations Management
+          </li>
+          <li>
+            Microeconomics
+          </li>
+          <li>
+            Macroeconomics
+          </li>
+        </ul>
+      </div>
+      
+
+      <div class="experience-details" id="experience2">
+        <span class="close-button" onclick="closeExperience('experience2')"
+          >&times;</span
+        >
+            <h3>NYU Stern School of Business</h3>
+        <span>Feb 2021 - May 2022</span>
+        <div>Relevant Coursework: </div>
+
+        <ul>
+          <li>
+            Introduction to Microeconomics
+          </li>
+          <li>
+            Introduction to Macroeconomics
+          </li>
+          <li>
+            Statistics
+          </li>
+          <li>
+            Regression
+          </li>
+          <li>
+            Operations Management
+          </li>
+          <li>
+            Calculus
+          </li>
+          <li>
+            Data Analysis
+          </li>
+          <li>
+            Operations Management
+          </li>
+          <li>
+            Computational Social Science
+          </li>
+          <li>
+            Introduction to Accounting
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="experience-details" id="experience3">
+        <span class="close-button" onclick="closeExperience('experience3')"
+          >&times;</span
+        >
+        <!-- Full details -->
+              <h3>NYU Stern School of Business</h3>
+        <span>Feb 2021 - May 2022</span>
+        <div>Relevant Coursework: </div>
+
+        <ul>
+          <li>
+            Introduction to Interactive Media
+          </li>
+          <li>
+            Communications Lab
+          </li>
+          <li>
+            Computational Social Science
+          </li>
+          <li>
+            Art Intelligence
+          </li>
+          <li>
+           UX Design Experience
+          </li>
+        </ul>
+      </div>
+      <!-- Repeat for other experiences -->
+    </div>
+    <div class="overlay" id="overlay" onclick="closeExperience()"></div>
     <script src="script.js"></script>
   </body>
   <footer>

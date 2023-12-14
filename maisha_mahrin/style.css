@@ -152,7 +152,7 @@ body, html {
 
 /*Home Page CSS*/
 .landing-page {
-    background-image: url('LandingImg.png');
+    background-image: url('philyMaishaThemeMatch.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -162,13 +162,34 @@ body, html {
     align-items: center;
     color: white;
 }
-
-.name{
-    font-size: 3em;
-    font-family: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+@keyframes flash {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
 }
 
+.name{
+    font-family: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: inline-block; /* Adjust as needed */
+    font-size: 3em; /* Adjust as needed */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust as needed */
+    background: linear-gradient(90deg, transparent, #6b705c, transparent);
+    background-size: 200% auto; /* Adjust the size of the gradient */
+    animation: flash 4s linear infinite;
+}
+
+.content{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
 /*Portfolio Page CSS*/
 
 .bodyWebPage{
@@ -409,7 +430,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(54, 22, 1, 0.5);
     z-index: 999; /* Ensure it's below the experience details but above everything else */
 }
 
