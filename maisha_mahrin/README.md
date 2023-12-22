@@ -3,7 +3,7 @@
 
 
 
-Link to the hosted Website: [https://maishahoq.github.io/SoundProject/](https://maishahoq.github.io/maisha_mahrin/about.html) 
+Link to the hosted Website: [Maisha Mahrin Portfolio](https://maishahoq.github.io/maisha_mahrin/) 
 
 
 
