@@ -11,7 +11,7 @@ Running the website: Please run the website on Chrome
 
 ***Device-Friendly UI:***   
 
-The website is device and different screen size friendly which means you can operate it on mobile, tablet, ipad and desktop screens. The outline and design of the website will adapt to the screen size and change as required.
+The website is device and screen size friendly which means you can operate it on mobile, tablet, ipad and desktop screens. The outline and design of the website will adapt to the screen size and change as required.
 
 ***Project Description:***      
 
